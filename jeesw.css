@@ -1,0 +1,374 @@
+<style type="text/css">
+  @font-face {
+      font-family: Muli;
+      src: url('/assets/fonts/Muli.ttf');
+  }
+
+  h1,
+  h2,
+  h3,
+  h4,
+  h5,
+  h6,
+  a,
+  span,
+  strong,
+  .btn,
+  .btn btn-lg btn-kirim,
+  .btn btn-lg btn-hapus,
+  .media,
+  p,
+  li,
+  thead,
+  tbody,
+  b,
+  .row {
+      font-family: Muli !important;
+  }
+
+  .hidden {
+      display: none;
+  }
+
+  .top45 {
+      top: 45px;
+  }
+
+  .sidebar-toggle {
+      background-color: #ff0000;
+  }
+
+  .minggir {
+      padding-left: 55px !important;
+  }
+
+  #content {
+      overflow-y: scroll !important;
+  }
+
+  .navigation-custom-list {
+    background-color: linear-gradient(0deg, rgba(72, 0, 0) 0%, rgba(139, 0, 0) 62%,rgba(255, 0, 0)) 100% !important;
+    color:rgb(255, 230, 0);
+  }
+
+  .navigatepage::-webkit-scrollbar {
+      width: 10px;
+      background-color: #ffea00;
+  }
+
+  .navigatepage::-webkit-scrollbar-thumb {
+      border-radius: 10px;
+      -webkit-box-shadow: inset 0 0 6px rgba(0, 0, 0, .3);
+      background-color: #c00000;
+  }
+
+  .backdt {
+      background-color: #48a3d8;
+      color: white;
+  }
+
+  .backdl {
+      background-color: #71bb9c;
+      color: white;
+  }
+
+  .backng {
+      background-color: #fdb32b;
+      color: black;
+  }
+
+  .backbg {
+      background-color: #36acb1;
+      color: white;
+  }
+
+  .backtg {
+      background-color: #69636d;
+      color: white;
+  }
+
+  .spinchips {
+      padding: 5px;
+      border-radius: 20px;
+      margin: 19px 20px;
+      position: fixed;
+      font-size: 10px;
+      font-weight: bold;
+      cursor: pointer;
+      display: inline-flex;
+  }
+
+  .spinimg {
+      width: 20px;
+      margin-right: 4px;
+  }
+
+  .spinfont {
+      position: relative;
+      top: 2px;
+      margin-right: 8px;
+  }
+
+  .spinnotif {
+      position: absolute;
+      right: -8px;
+      top: -2px;
+  }
+
+  .bet-closed {
+      color: white;
+      animation: blinker 1.5s linear infinite;
+      background: #ff3838;
+      border-radius: 5px;
+      padding: 3px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+  }
+
+  @keyframes  blinker {
+      50% {
+          opacity: 0;
+      }
+  }
+
+  .nw-hide {
+      display: none;
+  }
+
+  .disabled {
+      pointer-events: none;
+  }
+
+  .nw-content-body {
+      color: black;
+  }
+
+  #putar2 {
+      font-size: 1.5em;
+      line-height: 50px;
+      color: rgba(29, 152, 194, 1);
+      margin-right: 20px;
+      cursor: pointer;
+  }
+
+  .uppercase {
+    background: linear-gradient(0deg, rgba(72, 0, 0) 0%, rgba(139, 0, 0) 62%,rgba(255, 0, 0)) 100% !important;
+    border-radius: 20px;
+  }
+
+  @keyframes gradient {
+      0% {
+      background-position: 0% 82%;
+      }
+      
+      50% {
+      background-position: 100% 0%;
+      }
+      
+      100% {
+      background-position: 0% 82%;
+      }
+      }
+
+  .uppercaseblock {
+      display: block !important;
+  }
+
+  .minggir {
+      overflow: hidden;
+      outline: none;
+      padding-left: 55px !important;
+  }
+
+  .button-play-games {
+      font-size: 14px;
+  }
+
+  .newgame-tg88 {
+      padding: 5px;
+      width: 30px;
+      height: 30px;
+      border: 1px solid transparent;
+      z-index: 99;
+      position: absolute;
+      color: #fff;
+      border-top-left-radius: 5px;
+      border-bottom-right-radius: 5px;
+      font-size: 11px;
+      background-color: #b20000;
+      padding-top: 5px;
+      padding-left: 2px;
+      font-weight: bold;
+  }
+
+  .esport-content,
+  .raffle-content,
+  .trade-content,
+  {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-gap: 10px;
+  padding: 0 10px;
+  }
+
+  .gameesport-game img,
+  .raffle-game img,
+  .trade-game img {
+      width: 100%;
+      border-radius: 5px
+  }
+
+  .wlb2c-pools-4djowo {
+      background-position: center -1935px;
+  }
+
+  .wlb2c-pools-4dmagnum {
+      background-position: center -2111px;
+  }
+
+  .raffle-game,
+  .trade-game,
+  .gameesport-content {
+      padding: 10px;
+      border-radius: 5px;
+  }
+</style>
+
+      <style type="text/css">
+      .spin {
+          position: absolute;
+          top: 13px;
+          right: 44.5%;
+          border-radius: 25px;
+          background: #FF0000;
+          padding: 5px 0px;
+          width: 28px;
+          height: 28px;
+          color: #ffffff;
+          font-size: 15px;
+          font-weight: bold;
+          margin-top: -11px;
+          z-index: 1000;
+      }
+
+      h2.media-heading.animate-number {
+      font-size: 36px!important;
+      color: yellow!important;
+      }
+
+.card-container.col-lg-3.col-sm-6.col-sm-12 .card.card-pool.hover .front, 
+.card-container.col-lg-3.col-sm-6.col-sm-12 .card.card-blue.hover .front,
+.card-container.col-lg-3.col-sm-6.col-sm-12 .card.card-greensea.hover .front,
+.card-container.col-lg-3.col-sm-6.col-sm-12 .card.card-slategray.hover .front,
+.card-container.col-lg-3.col-sm-6.col-sm-12 .card.card-orange.hover .front,
+.card-container.col-lg-3.col-sm-6.col-sm-12 .card.card-cyan.hover .front,
+.card-container.col-lg-3.col-sm-6.col-sm-12 .card.card-bluegrey.hover .front,
+.card-container.col-lg-3.col-sm-6.col-sm-12 .card.card-drank.hover .front,
+.card-container.col-lg-3.col-sm-6.col-sm-12 .card.card-redbrown.hover .front,
+.card-container.col-lg-3.col-sm-6.col-sm-12 .card.card-bogil.hover .front,
+.card-container.col-lg-3.col-sm-6.col-sm-12 .card.card-roulette.hover .front,
+.card-container.col-lg-3.col-sm-6.col-sm-12 .card.card-sicbo.hover .front,
+.card-container.col-lg-3.col-sm-6.col-sm-12 .card.card-dt.hover .front,
+.card-container.col-lg-3.col-sm-6.col-sm-12 .card.card-amethyst.hover .front,
+.card-container.col-lg-3.col-sm-6.col-sm-12 .card.card-brown.hover .front,
+.card-container.col-lg-3.col-sm-6.col-sm-12 .card.card-grey.hover .front,
+.card-container.col-lg-3.col-sm-6.col-sm-12 .card.card-lightblue.hover .front,
+.card-container.col-lg-3.col-sm-6.col-sm-12 .card.card-deeppurple.hover .front,
+.card-container.col-lg-3.col-sm-6.col-sm-12 .card.card-lime.hover .front,
+.card-container.col-lg-3.col-sm-6.col-sm-12 .card.card-24d.hover .front {
+  background: linear-gradient(0deg, rgba(72, 0, 0) 0%, rgba(139, 0, 0) 62%,rgba(255, 0, 0)) 100% !important;
+}
+
+      .card-container .card.card-brown .front {
+          color: white;
+          background-color: #6D4C41;
+      }
+
+      .card-container .card.card-grey .front {
+          color: white;
+          background-color: #616161;
+      }
+
+      .card-container .card.card-lightblue .front {
+          color: white;
+          background-color: #00B0FF;
+      }
+
+      .card-container .card.card-deeppurple .front {
+          color: white;
+          background-color: #673AB7;
+      }
+
+      .card-container .card.card-lime .front {
+          color: white;
+          background-color: #CDDC39;
+      }
+
+      .card-container .card.card-lime .front {
+          color: white;
+          background-color: #4d0000;
+      }
+
+      .card-container .card.card-bluegrey .front {
+          color: white;
+          background-color: #ff0000;
+      }
+
+      .card-container .card .front {
+          min-height: 135px;
+      }
+
+      .card-container {
+          min-height: 135px;
+      }
+
+      .slot-img {
+          width: 100%;
+          height: 135px;
+      }
+
+      .media {
+          display: flex;
+          align-items: center;
+      }
+
+      .image-container {
+          position: relative;
+          display: inline-block;
+      }
+
+      .image-container img {
+          display: block;
+          max-width: 100%;
+          height: auto;
+          position: unset;
+      }
+
+      .label-arrow {
+          position: absolute;
+          top: 0px;
+          right: 0px;
+          background-color: #FF5733;
+          color: #fff;
+          padding: 5px 20px 5px 15px;
+          font-size: 14px;
+          font-weight: bold;
+          clip-path: polygon(10% 0%, 100% 0%, 100% 100%, 10% 100%, 0% 50%);
+      }
+
+      .action-button {
+          position: absolute;
+          top: 35%;
+          right: 3%;
+          padding: 10px;
+          padding-right: 20px;
+          padding-left: 20px;
+          background-color: #7db039;
+          color: #fff;
+          border: none;
+          border-radius: 5px;
+          cursor: pointer;
+          font-size: 16px;
+      }
+  </style>
